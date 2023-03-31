@@ -1,0 +1,14 @@
+; Left-rotates the bits of the value at 0x3050 once.
+; CSC 225, Assignment 2
+; Given code, Winter '20
+
+0011 0000 0000 0000     ; Start at 0x3000.
+0101 010 010 1 00000; clear R2
+0101 011 011 1 00000; clear R3
+0010 010 001001101 ; Load
+0000 011 000000001; check for negative
+0001 011 011 1 00001; add 1
+0001 010 010 000 010 ; left shift
+0001 011 010 000 011; add to R3
+0011 011 001001001; store
+1111 0000 00100101; TODO: Complete this program.
